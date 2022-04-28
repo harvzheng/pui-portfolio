@@ -68,7 +68,7 @@ function Home() {
             <Flex className="flex-col lg:flex-row">
               <Flex direction="column" justify="center">
                 <Heading color="#13293D">
-                  Hi, I'm Harvey!
+                  Hi, I&apos;m Harvey!
                 </Heading>
                 <Text as='i' fontSize='2xl' color="#13293D">
                     CMU Stat ML + HCI &apos;23

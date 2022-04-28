@@ -17,6 +17,8 @@ In terms of how pages are rendered, React has a lot of pre-built UI elements tha
 Pages are stored in `./pages`. How the code is structured should look familiar, although the elements may not be as familiar.
 
 ## Video
+[**Link to Video Demo on YouTube**](https://youtu.be/t7YsVPWD1UY)
+
 
 ## Links
 
