@@ -1,11 +1,12 @@
+// Equivalent to "index.html", but written in React instead
 import React, { Fragment } from 'react';
 import { useState, useEffect } from 'react';
 import { config, useSpring, animated } from 'react-spring'
 import ReactDOM from 'react-dom';
 import Head from 'next/head'
-import Menu from '../pages/components/menu'
-import Blob from '../pages/components/blob'
-import Nav from '../pages/components/nav'
+import Menu from '../components/menu'
+import Blob from '../components/blob'
+import Nav from '../components/nav'
 import Wave from 'react-wavify'
 import styles from '../styles/Home.module.css'
 import { Container } from '@chakra-ui/react'
@@ -15,6 +16,7 @@ import { Heading } from '@chakra-ui/react'
 import { Grid, GridItem } from '@chakra-ui/react'
 import { EmailIcon, ArrowForwardIcon } from '@chakra-ui/icons'
 
+// Function is identical to the one found in components/blob.js, except color differs slightly
 function Morph({x}){
   return (
       <svg
@@ -26,8 +28,8 @@ function Morph({x}){
       >
         <defs> 
             <linearGradient id="sw-gradient-sun" x1="0" x2="1" y1="1" y2="0">
-                <stop id="stop1" stop-color="rgba(251, 168, 31, 1)" offset="0%"></stop>
-                <stop id="stop2" stop-color="rgba(248, 117, 55, 1)" offset="100%"></stop>
+                <stop id="stop1" stopColor="rgba(251, 168, 31, 1)" offset="0%"></stop>
+                <stop id="stop2" stopColor="rgba(248, 117, 55, 1)" offset="100%"></stop>
             </linearGradient>
         </defs>
         <animated.path
@@ -66,10 +68,10 @@ function Home() {
             <Flex className="flex-col lg:flex-row">
               <Flex direction="column" justify="center">
                 <Heading color="#13293D">
-                  Harvey Zheng
+                  Hi, I'm Harvey!
                 </Heading>
                 <Text as='i' fontSize='2xl' color="#13293D">
-                    CMU Stat ML + HCI '23
+                    CMU Stat ML + HCI &apos;23
                 </Text>
               </Flex>
                 

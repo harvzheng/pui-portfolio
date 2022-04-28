@@ -1,3 +1,5 @@
+// A footer component
+// Includes links to profiles, social, and email
 import {
   Box,
   Icon,

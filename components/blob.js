@@ -1,10 +1,16 @@
+// This component creates the organic shapes, or the "blobs", and animates them.
+// This also adds the header and description of a project.
+// By using preset paths from SVGs, we can use the react-spring library to animate
+// the morph from one svg path to another. In this case, the progress is tracked
+// by a variable "x", which corresponds to a timer in other files.
+
 import React, { Component } from 'react';
 import { useState, useEffect } from 'react';
 import { config, useSpring, animated } from 'react-spring'
 import { Heading, Flex, Box, Spacer, Image, Text } from '@chakra-ui/react'
 import PropTypes from 'prop-types';
 import Link from 'next/link'
-import styles from '../../styles/Home.module.css'
+import styles from '../styles/Home.module.css'
 
 
 const blobPaths = [
@@ -25,8 +31,8 @@ function Morph({x, path1, path2}){
       >
         <defs> 
             <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
-                <stop id="stop1" stop-color="#52B788" offset="0%"></stop>
-                <stop id="stop2" stop-color="#2F5A74" offset="100%"></stop>
+                <stop id="stop1" stopColor="#52B788" offset="0%"></stop>
+                <stop id="stop2" stopColor="#2F5A74" offset="100%"></stop>
             </linearGradient>
         </defs>
         <animated.path
@@ -53,6 +59,7 @@ function Blob({blobPath1, blobPath2, projectImage, link, projectName, projectDes
       <Box className={styles.organiccontainer}>
         <Morph x={x} path1={blobPath1} path2={blobPath2}/>
         <Link href={link}>
+          {/* When a mouse hovers, 'x' is changed. When it leaves, 'x' resets.*/}
           <Image src="../images/thumbnail1.png" 
             className={styles.organicoverlay} 
             onMouseEnter={() => setActive(true)}
@@ -72,8 +79,8 @@ function Blob({blobPath1, blobPath2, projectImage, link, projectName, projectDes
   )
 }
 
+// This essentially sets required variables as inputs into the component.
 Blob.propTypes = {
-  blob: PropTypes.string.isRequired,
   projectImage: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   projectName: PropTypes.string.isRequired,

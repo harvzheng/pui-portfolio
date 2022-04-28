@@ -1,11 +1,12 @@
+// A page for the compilation of development projects
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import Head from 'next/head'
-import Menu from './components/menu'
+import Menu from '../components/menu'
 
-import Nav from './components/nav'
+import Nav from '../components/nav'
 import styles from '../styles/Home.module.css'
-import Blob from './components/blob'
+import Blob from '../components/blob'
 import { Box, Container, Flex, Heading, } from '@chakra-ui/react'
 
 
@@ -22,7 +23,7 @@ export default function Development() {
         <Container maxW='container.xl'>
           <Flex className='flex-col md:flex-row items-center md:items-start'>
             <Flex direction="column">
-              <Menu index={1}/>
+              <Menu index={2}/>
             </Flex>
             <Flex grow={1} direction="column" justify="center" className={styles.mainContent}>
               <Box marginBottom="60px">

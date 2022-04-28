@@ -1,11 +1,12 @@
+// A page for the compilation of UX projects
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import Head from 'next/head'
-import Menu from '../pages/components/menu'
+import Menu from '../components/menu'
 
-import Nav from '../pages/components/nav'
+import Nav from '../components/nav'
 import styles from '../styles/Home.module.css'
-import Blob from '../pages/components/blob'
+import Blob from '../components/blob'
 import { Box, Container, Flex, Heading, } from '@chakra-ui/react'
 
 

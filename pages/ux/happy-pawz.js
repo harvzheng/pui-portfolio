@@ -1,10 +1,12 @@
+// This page is an example of a project page. Using components I made and from other
+// React libraries, I constructed a responsive portfolio page.
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import Head from 'next/head'
-import Menu from '../components/menu'
-import Blob from '../components/blob'
+import Menu from '../../components/menu'
+import Blob from '../../components/blob'
 
-import Nav from '../../pages/components/nav'
+import Nav from '../../components/nav'
 import styles from '../../styles/Home.module.css'
 import { Container, List } from '@chakra-ui/react'
 import { Flex, Spacer } from '@chakra-ui/react'

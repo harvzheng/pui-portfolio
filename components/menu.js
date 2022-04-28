@@ -1,8 +1,10 @@
+// The side nav featured on the site
+// Takes in which link should be active, and highlights it
 import React, { Component } from 'react';
 import { Flex, Spacer } from '@chakra-ui/react'
 import PropTypes from 'prop-types';
 import Link from 'next/link'
-import styles from '../../styles/Home.module.css'
+import styles from '../styles/Home.module.css'
 
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 
