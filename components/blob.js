@@ -78,13 +78,4 @@ function Blob({blobPath1, blobPath2, projectImage, link, projectName, projectDes
     </Flex>
   )
 }
-
-// This essentially sets required variables as inputs into the component.
-Blob.propTypes = {
-  projectImage: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
-  projectName: PropTypes.string.isRequired,
-  projectDesc: PropTypes.string.isRequired,
-  reverse: PropTypes.bool.isRequired,
-}
 export default Blob;

@@ -55,23 +55,23 @@ export default function Home() {
               <Heading as='h2' size='lg'>
                 Table of Contents
               </Heading>
-              <UnorderedList>
-                <ListItem>
+              <UnorderedList marginLeft="32px">
+                <ListItem className="text-xl italic" color="teal.200">
                   <Link href="/ux/happy-pawz#overview">Overview</Link>
                 </ListItem>
-                <ListItem>
+                <ListItem className="text-xl italic" color="teal.200">
                   <Link href="/ux/happy-pawz#research">Rapid User Research</Link>
                 </ListItem>
-                <ListItem>
+                <ListItem className="text-xl italic" color="teal.200">
                   <Link href="/ux/happy-pawz#journey">Customer Journey Map</Link>
                 </ListItem>
-                <ListItem>
+                <ListItem className="text-xl italic" color="teal.200">
                   <Link href="/ux/happy-pawz#prototype">Prototyping</Link>
                 </ListItem>
-                <ListItem>
+                <ListItem className="text-xl italic" color="teal.200">
                   <Link href="/ux/happy-pawz#mobile">Mobile Hi-Fi Prototypes</Link>
                 </ListItem>
-                <ListItem>
+                <ListItem className="text-xl italic" color="teal.200">
                   <Link href="/ux/happy-pawz#desktop">Desktop Hi-Fi Prototypes</Link>
                 </ListItem>
               </UnorderedList>
